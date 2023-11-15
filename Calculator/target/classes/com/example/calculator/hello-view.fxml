@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.calculator.CalculatorController">
+    <TextField fx:id="inputField" promptText="Enter expression" />
+
+    <HBox spacing="5">
+        <Button text="7" onAction="#digitButtonClicked" />
+        <Button text="8" onAction="#digitButtonClicked" />
+        <Button text="9" onAction="#digitButtonClicked" />
+        <Button text="/" onAction="#operatorButtonClicked" />
+    </HBox>
+
+    <HBox spacing="5">
+        <Button text="4" onAction="#digitButtonClicked" />
+        <Button text="5" onAction="#digitButtonClicked" />
+        <Button text="6" onAction="#digitButtonClicked" />
+        <Button text="*" onAction="#operatorButtonClicked" />
+    </HBox>
+
+    <HBox spacing="5">
+        <Button text="1" onAction="#digitButtonClicked" />
+        <Button text="2" onAction="#digitButtonClicked" />
+        <Button text="3" onAction="#digitButtonClicked" />
+        <Button text="-" onAction="#operatorButtonClicked" />
+    </HBox>
+
+    <HBox spacing="5">
+        <Button text="0" onAction="#digitButtonClicked" />
+        <Button text="." onAction="#digitButtonClicked" />
+        <Button text="=" onAction="#equalsButtonClicked" />
+        <Button text="+" onAction="#operatorButtonClicked" />
+    </HBox>
+
+    <HBox spacing="5">
+        <Button text="C" onAction="#clearButtonClicked" />
+    </HBox>
+</VBox>
